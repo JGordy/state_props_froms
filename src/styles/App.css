@@ -3,5 +3,35 @@
 }
 
 .navbar {
-  background-color: #eee;
+  z-index: 5000;
+}
+
+.navbar-brand {
+  font-size: 48px;
+  text-shadow: 1px 1px 0px gray;
+}
+
+.flex_container {
+  background: linear-gradient(#fff, #eee 5%, gray);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
+}
+
+.border-0 {
+  box-shadow: 1px 1px 1px gray;
+}
+
+.text-dark {
+  color: gray;
+}
+
+.bb {
+  border-bottom: 1px solid lightgray;
+}
+
+.font-weight-bold {
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  text-shadow: 1px 1px 0px white;
 }

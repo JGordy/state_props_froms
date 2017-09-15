@@ -27,16 +27,15 @@ export default class PlayList extends Component {
         })
   }
   render() {
-    console.log(this.state.songs);
     let listItem = this.state.songs.map((songData, index) => {
       return (
         <PlayListItem key={index + 1} songData={songData}/>
       )
     })
     return (
-      <div className="card col-md-6">
+      <div className="col-md-6">
         <form onSubmit={this.fetchData}>
-          <button type="submit" className="btn btn-primary">Update List</button>
+          <button type="submit" className="btn btn-block btn-info mb-2">Update List</button>
         </form>
         {listItem}
       </div>

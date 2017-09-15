@@ -70,41 +70,43 @@ export default class PlayListForm extends Component {
 
   render() {
     return (
-      <div className="form d-flex flex-column col-md-6">
-        <form onSubmit={this.addToList}>
-          <div className="form-group">
-            <label htmlFor="user">Username:</label>
+      <div className="form sticky-top d-flex flex-column col-md-6">
+        <form className="song_form" onSubmit={this.addToList}>
+          <div className="form-group text-left">
+            <label className="text-warning font-weight-bold" htmlFor="user">Username:</label>
             <input
             onChange={this.handleNameChange}
             type="text" className="form-control" id="user" placeholder="Name or User Name"
             value={this.state.userName}
             required/>
           </div>
-          <div className="form-group">
-            <label htmlFor="band">Artist/Band:</label>
+          <div className="form-group text-left">
+            <label className="text-warning font-weight-bold" htmlFor="band">Artist/Band:</label>
             <input
             onChange={this.handleArtistChange}
             type="text" className="form-control" id="band" placeholder="Artist or Band Name"
             value={this.state.songArtist}
             required/>
           </div>
-          <div className="form-group">
-            <label htmlFor="song">Song Title:</label>
+          <div className="form-group text-left">
+            <label className="text-warning font-weight-bold"
+            htmlFor="song">Song Title:</label>
             <input
             onChange={this.handleTitleChange}
             type="text" className="form-control" id="song" placeholder="Song Title"
             value={this.state.songTitle}
             required/>
           </div>
-          <div className="form-group">
-            <label htmlFor="notes">Notes about Song</label>
+          <div className="form-group text-left">
+            <label className="text-warning font-weight-bold"
+            htmlFor="notes">Notes about Song:</label>
             <textarea
             onChange={this.handleNoteChange}
             type="text" className="form-control" id="notes"
-            value={this.state.songNotes}
-            required></textarea>
+            value={this.state.songNotes}>
+            </textarea>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-info">Submit</button>
         </form>
       </div>
     );

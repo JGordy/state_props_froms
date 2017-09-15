@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 
 export default class PlayListItem extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     return (
-      <div className="card">
-        <h4>User: {this.props.songData.userName}</h4>
-        <h4>Artist/Band: {this.props.songData.songArtist}</h4>
-        <h4>Title: {this.props.songData.songTitle}</h4>
-        <h4>Notes: {this.props.songData.songNotes}</h4>
+      <div className="card border-0 text-left mb-4 p-3">
+        <h4 className="text-dark bb"><span>User:</span> <span className="text-warning d-flex flex-row-reverse">
+        {this.props.songData.userName}</span></h4>
+        <h4 className="text-dark bb"><span>Artist/Band:</span> <span className="text-info d-flex flex-row-reverse">
+        {this.props.songData.songArtist}</span></h4>
+        <h4 className="text-dark bb"><span>Title:</span> <span className="text-info d-flex flex-row-reverse">
+        {this.props.songData.songTitle}</span></h4>
+        <h4 className="text-dark"><span>Notes:</span> <span className="text-info d-flex flex-row-reverse">{this.props.songData.songNotes}</span></h4>
       </div>
     );
   }

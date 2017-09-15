@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import PlayListItem from './PlayListItem.js';
 
 
@@ -8,7 +7,7 @@ export default class PlayList extends Component {
   constructor(props) {
     super(props);
     this.fetchData = this.fetchData.bind(this);
-    this.state = {songs: ''}
+    this.state = {songs: []}
   }
 
   fetchData = (event) => {
@@ -25,23 +24,22 @@ export default class PlayList extends Component {
           return results.json();
         }).then(data => {
           this.setState({songs: data});
-          console.log("state", this.state.songs);
         })
   }
   render() {
-    let songData = this.state.songs;
-    let listItem = songData.map((songData, index) => {
+    console.log(this.state.songs);
+    let listItem = this.state.songs.map((songData, index) => {
       return (
-        <PlayListItem key={index + 1} songData={songData}>
+        <PlayListItem key={index + 1} songData={songData}/>
       )
     })
     return (
-      <div className=" card col-md-6">
-        <form className="form">
-          <button className="btn btn-primary">Submit</ button>
-        </ form>
+      <div className="card col-md-6">
+        <form onSubmit={this.fetchData}>
+          <button type="submit" className="btn btn-primary">Update List</button>
+        </form>
         {listItem}
-      </ div>
+      </div>
     );
   }
 }

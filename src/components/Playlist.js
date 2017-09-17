@@ -34,8 +34,8 @@ export default class PlayList extends Component {
     })
     return (
       <div className="col-md-6">
-        <form onSubmit={this.fetchData}>
-          <button type="submit" className="btn btn-block btn-info mb-2">Update List</button>
+        <form onSubmit={this.fetchData} className="sticky-top">
+          <button type="submit" className="btn btn-block btn-outline-info mb-2">Update List</button>
         </form>
         {listItem}
       </div>

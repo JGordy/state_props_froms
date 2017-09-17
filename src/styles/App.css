@@ -3,6 +3,8 @@
 }
 
 .navbar {
+  background-color: #56C0E0;
+  /*background: linear-gradient(#56C0E0, #fff);*/
   z-index: 5000;
 }
 
@@ -33,5 +35,28 @@
 .font-weight-bold {
   font-size: 20px;
   letter-spacing: 0.3em;
-  text-shadow: 1px 1px 0px white;
+  /*text-shadow: 1px 1px 1px gray;*/
+}
+
+.col-md-6 {
+  height: 477px;
+  overflow: scroll;
+}
+
+.col-md-6 .sticky-top {
+  top: 1px;
+}
+
+.btn-outline-info {
+  background-color: #fff;
+}
+
+label {
+  color: steelblue;
+}
+
+.name_color {
+  color: steelblue;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px darkgray;*/
 }

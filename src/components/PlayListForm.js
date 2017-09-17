@@ -73,7 +73,7 @@ export default class PlayListForm extends Component {
       <div className="form sticky-top d-flex flex-column col-md-6">
         <form className="song_form" onSubmit={this.addToList}>
           <div className="form-group text-left">
-            <label className="text-warning font-weight-bold" htmlFor="user">Username:</label>
+            <label className="font-weight-bold" htmlFor="user">Username:</label>
             <input
             onChange={this.handleNameChange}
             type="text" className="form-control" id="user" placeholder="Name or User Name"
@@ -81,7 +81,7 @@ export default class PlayListForm extends Component {
             required/>
           </div>
           <div className="form-group text-left">
-            <label className="text-warning font-weight-bold" htmlFor="band">Artist/Band:</label>
+            <label className="font-weight-bold" htmlFor="band">Artist/Band:</label>
             <input
             onChange={this.handleArtistChange}
             type="text" className="form-control" id="band" placeholder="Artist or Band Name"
@@ -89,7 +89,7 @@ export default class PlayListForm extends Component {
             required/>
           </div>
           <div className="form-group text-left">
-            <label className="text-warning font-weight-bold"
+            <label className="font-weight-bold"
             htmlFor="song">Song Title:</label>
             <input
             onChange={this.handleTitleChange}
@@ -98,7 +98,7 @@ export default class PlayListForm extends Component {
             required/>
           </div>
           <div className="form-group text-left">
-            <label className="text-warning font-weight-bold"
+            <label className="font-weight-bold"
             htmlFor="notes">Notes about Song:</label>
             <textarea
             onChange={this.handleNoteChange}

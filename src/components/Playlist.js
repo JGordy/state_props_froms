@@ -33,7 +33,7 @@ export default class PlayList extends Component {
       )
     })
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 scroll">
         <form onSubmit={this.fetchData} className="sticky-top">
           <button type="submit" className="btn btn-block btn-outline-info mb-2">Update List</button>
         </form>

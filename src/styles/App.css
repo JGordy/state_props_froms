@@ -42,7 +42,7 @@ body {
   /*text-shadow: 1px 1px 1px gray;*/
 }
 
-.col-md-6 {
+.col-md-6, .scroll {
   height: 477px;
   overflow: scroll;
 }
@@ -63,4 +63,14 @@ label {
   color: steelblue;
   font-weight: bold;
   /*text-shadow: 1px 1px 1px darkgray;*/
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(steelblue, #56C0E0);
+  background-color: steelblue;
+  border-radius: 10px;
 }

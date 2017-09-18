@@ -65,6 +65,7 @@ export default class PlayListForm extends Component {
     }).catch(err => {
       console.log(err, "boo!");
     });
+
     this.setState({userName: '', songNotes: '', songArtist: '', songTitle:''});
   }
 

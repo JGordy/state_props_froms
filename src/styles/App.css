@@ -1,3 +1,7 @@
+body {
+  background-image: url(../images/confectionary.png);
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +18,7 @@
 }
 
 .flex_container {
-  background: linear-gradient(#fff, #eee 5%, gray);
+  /*background: linear-gradient(#fff, #eee 5%, gray);*/
   position: -webkit-sticky;
   position: sticky;
   top: 75px;
